@@ -1,7 +1,6 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,7 +14,6 @@ import {
 import { Gift } from "lucide-react";
 
 export default function AuthPage() {
-  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleGoogleAuth = async () => {
