@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Gift, Users, Calendar, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function Component() {
   const features = [
@@ -69,7 +69,9 @@ export default function Component() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <Button size="lg">Get Started</Button>
+            <Button size="lg">
+              <Link href="/">Get Started</Link>
+            </Button>
           </motion.div>
         </section>
 
@@ -115,7 +117,9 @@ export default function Component() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <Button size="lg">Sign Up Now</Button>
+            <Button size="lg">
+              <Link href="/">Sign Up Now</Link>
+            </Button>
           </motion.div>
         </section>
       </main>
